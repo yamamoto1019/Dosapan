@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour {
 		transform.position = StationDatabase.station[i];
 	}
 	
-	// Update is called once per frame
 	void FixedUpdate () {
 		if (Input.GetKeyUp (KeyCode.UpArrow)) {
 			if (i >= 0 && i < 8) {
@@ -28,5 +27,12 @@ public class PlayerController : MonoBehaviour {
 		transform.position = transform.position + Vector3.Scale(StationDatabase.station[i] - transform.position, new Vector3(obj, obj, obj));
 		obj += Time.deltaTime / Sec;
 
+	}
+
+	// Update is called once per frame
+	void Update(){
+		if (Input.GetKey(KeyCode.Space)) {
+			Application.LoadLevel ("Game1");
+		}
 	}
 }

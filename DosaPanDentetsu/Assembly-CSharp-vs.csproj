@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\BallController.cs" />
      <Compile Include="Assets\BlockController.cs" />
+     <Compile Include="Assets\Game1Manager.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\RacketController.cs" />
      <Compile Include="Assets\StationController.cs" />
