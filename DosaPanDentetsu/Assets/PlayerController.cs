@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update(){
 		if (Input.GetKey(KeyCode.Space)) {
-			Application.LoadLevel ("Game1");
+			Application.LoadLevel ("Player");
 		}
 	}
 }
