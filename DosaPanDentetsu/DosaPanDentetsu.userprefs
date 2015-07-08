@@ -1,14 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../JokerScriptTest/Assets/JOKER_GAME/Plugins/NewBehaviourScript.cs">
     <Files>
-      <File FileName="Assets/StationController.cs" Line="1" Column="1" />
-      <File FileName="Assets/StationDatabase.cs" Line="1" Column="1" />
-      <File FileName="Assets/PlayerController.cs" Line="34" Column="33" />
-      <File FileName="Assets/BallController.cs" Line="1" Column="1" />
-      <File FileName="Assets/RacketController.cs" Line="1" Column="1" />
-      <File FileName="Assets/BlockController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Game1Manager.cs" Line="18" Column="34" />
+      <File FileName="../../../JokerScriptTest/Assets/JOKER_GAME/Resources/novel/data/scenario/wide/scene1.txt" Line="1" Column="1" />
+      <File FileName="../../../JokerScriptTest/Assets/JOKER_GAME/Resources/novel/data/scenario/first.txt" Line="1" Column="1" />
+      <File FileName="Assets/PlayerController.cs" Line="27" Column="23" />
+      <File FileName="../../../JokerScriptTest/Assets/JOKER_GAME/Plugins/PluginComponent.cs" Line="1" Column="1" />
+      <File FileName="../../../JokerScriptTest/Assets/JOKER_GAME/Plugins/NewBehaviourScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

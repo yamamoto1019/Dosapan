@@ -46,9 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BallController.cs" />
-     <Compile Include="Assets\BlockController.cs" />
-     <Compile Include="Assets\Game1Manager.cs" />
      <Compile Include="Assets\JOKER\Scripts\Novel\Components\AnimComponent.cs" />
      <Compile Include="Assets\JOKER\Scripts\Novel\Components\AudioComponent.cs" />
      <Compile Include="Assets\JOKER\Scripts\Novel\Components\BgComponent.cs" />
@@ -105,7 +102,6 @@
      <Compile Include="Assets\JOKER\Scripts\Novel\Unity\PlaneEvent.cs" />
      <Compile Include="Assets\JOKER_GAME\Plugins\PluginComponent.cs" />
      <Compile Include="Assets\PlayerController.cs" />
-     <Compile Include="Assets\RacketController.cs" />
      <Compile Include="Assets\StationController.cs" />
      <Compile Include="Assets\StationDatabase.cs" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\libs\utils.txt" />
