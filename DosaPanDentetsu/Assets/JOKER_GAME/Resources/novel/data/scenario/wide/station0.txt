@@ -46,9 +46,10 @@
 
 北海道には現在、何市町村あるでしょう？[p]
 
-[select_new text="169" target=*select_a1 ]
-[select_new text="179" target=*select_a2 ]
-[select_new text="189" target=*select_a3 ]
+[select_new text="159" target=*select_a1 ]
+[select_new text="169" target=*select_a2 ]
+[select_new text="179" target=*select_a3 ]
+[select_new text="189" target=*select_a4 ]
 
 [select_show sound=click ]
 
@@ -60,11 +61,16 @@
 @jump target=*a_common
 
 *select_a2
-[chara_mod name="miki" face="glad"]
-正解です。現在、北海道には35市129町15村、179の市町村があります。[p]
+[chara_mod name="miki" face="sad"]
+残念。現在、北海道には35市129町15村、179の市町村があります。[p]
 @jump target=*a_common
 
 *select_a3
+[chara_mod name="miki" face="glad"]
+正解です！現在、北海道には35市129町15村、179の市町村があります。[p]
+@jump target=*a_common
+
+*select_a4
 [chara_mod name="miki" face="sad"]
 残念。現在、北海道には35市129町15村、179の市町村があります。[p]
 @jump target=*a_common

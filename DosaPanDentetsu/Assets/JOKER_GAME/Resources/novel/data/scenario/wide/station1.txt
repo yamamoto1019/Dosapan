@@ -1,0 +1,79 @@
+;チュートリアル用スクリプトファイル
+
+;メッセージ表示
+[showmessage]
+
+;共通ライブラリ
+;セーブ・ロードバックログなど基本的な機能を取り込む 
+[call file=wide/system target="*system_setting_buttons"]
+
+;ゲーム作成で便利なマクロ集
+[call file=wide/libs/utils]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"]
+
+;背景の新規定義
+[bg_new storage="shinkansen"]
+
+;背景の表示
+[bg_show ]
+
+;キャラクターの宣言 
+[chara_new name=miki storage="miki_fun" scale="2" y=-1]
+[chara_face name=miki face="angry" storage="miki_angry"]
+[chara_face name=miki face="glad" storage="miki_glad" ]
+[chara_face name=miki face="sad" storage="miki_sad" ]
+
+;キャラクターを表示
+[show name=miki]
+
+ところでお客さま、[r]
+函館でラーメンは召し上がりましたか？[l]
+え、まだ召し上がってないんですか？[p]
+
+[chara_mod name="miki" face="sad"]
+北海道に来てラーメンを食べないなんて。。。[l]
+[chara_mod name="miki" face="angry"]
+ラーメンに怒られますよ！！[l]
+それでは、せっかくなのでおさらいしておきましょうか。[p]
+
+函館ラーメンといえば次のうちどれでしょう？[p]
+
+[select_new text="塩" target=*select_a1 ]
+[select_new text="醤油" target=*select_a2 ]
+[select_new text="味噌" target=*select_a3 ]
+[select_new text="カレー" target=*select_a4 ]
+
+[select_show sound=click ]
+
+[s]
+
+*select_a1
+[chara_mod name="miki" face="glad"]
+正解です！[l]
+ちなみに醤油ラーメンは旭川、味噌ラーメンは札幌、あと、これから通ります室蘭ではカレーラーメンが有名です。[p]
+@jump target=*a_common
+
+*select_a2
+[chara_mod name="miki" face="sad"]
+残念。函館は塩ラーメンが有名なんです。[l]
+ちなみに醤油ラーメンは旭川、味噌ラーメンは札幌、あと、これから通ります室蘭ではカレーラーメンが有名です。[p]
+@jump target=*a_common
+
+*select_a3
+[chara_mod name="miki" face="sad"]
+残念。函館は塩ラーメンが有名なんです。[l]
+ちなみに醤油ラーメンは旭川、味噌ラーメンは札幌、あと、これから通ります室蘭ではカレーラーメンが有名です。[p]
+@jump target=*a_common
+
+*select_a3
+[chara_mod name="miki" face="sad"]
+残念。函館は塩ラーメンが有名なんです。[l]
+ちなみに醤油ラーメンは旭川、味噌ラーメンは札幌、あと、これから通ります室蘭ではカレーラーメンが有名です。[p]
+@jump target=*a_common
+
+*a_common
+[chara_mod name="miki" face="default"] 
+
+[wait time=2]
+[scene file="Main" ]

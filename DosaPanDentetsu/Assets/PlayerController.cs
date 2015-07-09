@@ -13,27 +13,37 @@ public class PlayerController : MonoBehaviour {
 		i = 0;
 		transform.position = StationDatabase.station[i];
 	}
-	
-	void FixedUpdate () {
-		if (Input.GetKeyUp (KeyCode.UpArrow)) {
-			if (i >= 0 && i < 8) {
-				i=i+1;
-			}
-		}
-		if (Input.GetKeyDown (KeyCode.DownArrow)) {
-			if (i > 0 && i < 9) {
-				i = i - 1;
-			}
-		}
-		transform.position = transform.position + Vector3.Scale(StationDatabase.station[i] - transform.position, new Vector3(obj, obj, obj));
-		obj += Time.deltaTime / Sec;
-
-	}
 
 	// Update is called once per frame
 	void Update(){
-		if (Input.GetKey(KeyCode.Space)) {
-			NovelSingleton.StatusManager.callJoker("wide/scene0","");
+		if (Input.GetMouseButtonDown(0)) {
+
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit = new RaycastHit();
+
+			if (Physics.Raycast(ray, out hit)){
+				Vector3 hitStation = hit.collider.transform.position;
+				if (hitStation == StationDatabase.station[0]) {
+					NovelSingleton.StatusManager.callJoker("wide/station0","");
+				}else if (hitStation == StationDatabase.station[1]){
+					NovelSingleton.StatusManager.callJoker("wide/station1","");
+				}else if (hitStation == StationDatabase.station[2]){
+					NovelSingleton.StatusManager.callJoker("wide/station2","");
+				}else if (hitStation == StationDatabase.station[3]){
+					NovelSingleton.StatusManager.callJoker("wide/station3","");
+				}else if (hitStation == StationDatabase.station[4]){
+					NovelSingleton.StatusManager.callJoker("wide/station4","");
+				}else if (hitStation == StationDatabase.station[5]){
+					NovelSingleton.StatusManager.callJoker("wide/station5","");
+				}else if (hitStation == StationDatabase.station[6]){
+					NovelSingleton.StatusManager.callJoker("wide/station6","");
+				}else if (hitStation == StationDatabase.station[7]){
+					NovelSingleton.StatusManager.callJoker("wide/station7","");
+				}else if (hitStation == StationDatabase.station[8]){
+					NovelSingleton.StatusManager.callJoker("wide/station8","");
+				}
+
+			}
 		}
 	}
 }
