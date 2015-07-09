@@ -57,7 +57,7 @@
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\libs\save.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\title.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\system.txt" />
-     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\scene1.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\scene0.txt" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\system.txt" />
      <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\libs\menu.txt" />

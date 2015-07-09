@@ -1,12 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../JokerScriptTest/Assets/JOKER_GAME/Plugins/NewBehaviourScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerController.cs">
     <Files>
-      <File FileName="../../../JokerScriptTest/Assets/JOKER_GAME/Resources/novel/data/scenario/wide/scene1.txt" Line="1" Column="1" />
-      <File FileName="../../../JokerScriptTest/Assets/JOKER_GAME/Resources/novel/data/scenario/first.txt" Line="1" Column="1" />
-      <File FileName="Assets/PlayerController.cs" Line="27" Column="23" />
-      <File FileName="../../../JokerScriptTest/Assets/JOKER_GAME/Plugins/PluginComponent.cs" Line="1" Column="1" />
-      <File FileName="../../../JokerScriptTest/Assets/JOKER_GAME/Plugins/NewBehaviourScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/PlayerController.cs" Line="36" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Novel;
 
 public class PlayerController : MonoBehaviour {
 	
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update(){
 		if (Input.GetKey(KeyCode.Space)) {
-			Application.LoadLevel ("Player");
+			NovelSingleton.StatusManager.callJoker("wide/scene0","");
 		}
 	}
 }
