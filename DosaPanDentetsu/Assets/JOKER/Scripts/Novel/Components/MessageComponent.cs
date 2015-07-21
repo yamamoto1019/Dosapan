@@ -114,12 +114,12 @@ color=色コードを指定します。16進数形式で指定してください
 
 			if (this.param ["size"] != "") {
 				int size = int.Parse (this.param["size"]);
-				this.gameView.messageArea.GetComponent<GUIText> ().guiText.fontSize = size;
+				this.gameView.messageArea.GetComponent<GUIText> ().GetComponent<GUIText>().fontSize = size;
 			}
 
 			if (this.param ["color"] != "") {
 				string color = this.param ["color"];
-				this.gameView.messageArea.GetComponent<GUIText> ().guiText.color = ColorX.HexToRGB (color);
+				this.gameView.messageArea.GetComponent<GUIText> ().GetComponent<GUIText>().color = ColorX.HexToRGB (color);
 			}
 
 			this.gameManager.nextOrder ();
@@ -170,8 +170,8 @@ title=メッセージ設定のリセット
 		public override void start ()
 		{
 
-			this.gameView.messageArea.GetComponent<GUIText> ().guiText.color = ColorX.HexToRGB (this.gameManager.getConfig ("messageFontColor"));
-			this.gameView.messageArea.GetComponent<GUIText> ().guiText.fontSize = int.Parse(this.gameManager.getConfig ("messageFontSize"));
+			this.gameView.messageArea.GetComponent<GUIText> ().GetComponent<GUIText>().color = ColorX.HexToRGB (this.gameManager.getConfig ("messageFontColor"));
+			this.gameView.messageArea.GetComponent<GUIText> ().GetComponent<GUIText>().fontSize = int.Parse(this.gameManager.getConfig ("messageFontSize"));
 			this.gameManager.nextOrder ();
 
 		}

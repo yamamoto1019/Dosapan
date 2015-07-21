@@ -14,7 +14,7 @@ public class CameraUtility : MonoBehaviour
 	void Start ()
 	{
 		aspectRate = (float)aspect.x / aspect.y;
-		_camera = camera;
+		_camera = GetComponent<Camera>();
 
 		JokerSetting jokerSetting = GameObject.Find ("JOKER_SETTING").GetComponent<JokerSetting> ();
 		this.aspect = jokerSetting.aspect;
